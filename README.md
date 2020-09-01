@@ -1,12 +1,23 @@
 # CYBR3120-HW1
 
-###
+## 200 OK ##
+
+curl --head https://dunwoody.edu
+
+HTTP/2 200 
+server: nginx
+date: Tue, 01 Sep 2020 00:35:20 GMT
+content-type: text/html; charset=UTF-8
+x-powered-by: PHP/7.2.33
+link: <https://dunwoody.edu/wp-json/>; rel="https://api.w.org/", <https://dunwoody.edu/wp-json/wp/v2/pages/122>; rel="alternate"; type="application/json", <https://dunwoody.edu/>; rel=shortlink
+x-tec-api-version: v1
+x-tec-api-root: https://dunwoody.edu/wp-json/tribe/events/v1/
+x-tec-api-origin: https://dunwoody.edu
+ms-author-via: DAV
+x-powered-by: PleskLin
 
 
-########
-
-
-## 301 Moved Permanently
+## 301 Moved Permanently ##
 
 curl --head twitter.com
 
@@ -22,62 +33,24 @@ x-connection-hash: db19d7de8f55c595701f9be4dcf3d83e
 x-response-time: 3
 
 
-## 400 Invalid HTTP Request ##
+## 401 Unathorized ##
 
-nc -C yahoo.com 80
 
-HTTP/1.0 400 Invalid HTTP Request
-Date: Tue, 01 Sep 2020 00:25:53 GMT
-Server: ATS
-Cache-Control: no-store
-Content-Type: text/html
-Content-Language: en
-X-Frame-Options: SAMEORIGIN
-Content-Length: 4364
+## 404 Not Found ##
 
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Yahoo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <style>
-      html {
-          height: 100%;
-      }
-      body {
-          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
-          background-size: cover;
-          height: 100%;
-          text-align: center;
-          font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
-          margin: 0;
-      }
-      table {
-          height: 100%;
-          width: 100%;
-          table-layout: fixed;
-          border-collapse: collapse;
-          border-spacing: 0;
-          border: none;
-      }
-      h1 {
-          font-size: 42px;                                                                  
-          font-weight: 400;                                                                 
-          color: #400090;                                                                   
-      }                                                                                     
-      p {                                                                                   
-          color: #1A1A1A;                                                                   
-      }                                                                                     
-      #message-1 {                                                                          
-          font-weight: bold;                                                                
-          margin: 0;                                                                        
-      }                                                                                     
-      #message-2 {                                                                          
-          display: inline-block;                                                            
-          *display: inline;                                                                 
-          zoom: 1;                                                                          
-          max-width: 17em;                                                                                                                                                                                                       
-          _w    
+curl --head https://www.apple.com/blahblah
+
+HTTP/2 404 
+server: Apache
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+accept-ranges: bytes
+x-content-type-options: nosniff
+content-type: text/html; charset=UTF-8
+strict-transport-security: max-age=31536000; includeSubDomains
+content-length: 0
+cache-control: max-age=180
+expires: Tue, 01 Sep 2020 00:40:33 GMT
+date: Tue, 01 Sep 2020 00:37:33 GMT
+set-cookie: geo=US; path=/; domain=.apple.com
+set-cookie: ccl=1OqvbkUhAWn3S/QGIBW3erXYifzyEM42sHN/DXuk4h2eXWJzhXczNPgIBDeA15C95UnZ4e4kysVT2XtXFpC13iFqEGukZwZQ/Mm59eT9ZfDw0YLkv8ZoRBcHCpRZxbDSELNoz/8f+k8=; path=/; domain=.apple.com
