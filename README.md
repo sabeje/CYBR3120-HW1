@@ -35,6 +35,29 @@ x-response-time: 3
 
 ## 401 Unathorized ##
 
+curl --head https://dunwoody.instructure.com/
+
+HTTP/2 401 
+date: Tue, 01 Sep 2020 00:42:07 GMT
+content-type: application/json; charset=utf-8
+server: Apache
+x-request-context-id: 10ec863d-6ff3-4810-8a27-fde3249179d8
+vary: Accept-Encoding
+x-rate-limit-remaining: 700.0
+x-canvas-meta: q=510;a=1;g=8cDORZAX0gyZcyxWaSDwUai5y34cTLlUzJNZbdRv;s=8900;c=cluster21;z=us-east-1c;b=1990732;m=1990732;u=0.01;y=0.00;d=0.00;
+x-request-cost: 0.012000000000057298
+cache-control: no-cache
+x-permitted-cross-domain-policies: none
+x-xss-protection: 1; mode=block
+x-download-options: noopen
+x-runtime: 0.013593
+x-content-type-options: nosniff
+set-cookie: _csrf_token=ERsnlbM%2BqsCtpKl4MHyUyPKjj1U2TzS59pODGJmL0rFmLWHky3bo%2Bf7F%2By4DEfKMqOfDZk45X9iR4fJL3MO7mg%3D%3D; path=/; secure
+x-request-processor: 02b2725ab96154510
+x-a11y-ally: Dana Danger Grey
+status: 401 Unauthorized
+p3p: CP="None, see http://www.instructure.com/privacy-policy"
+
 
 ## 404 Not Found ##
 
